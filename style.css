@@ -24,9 +24,11 @@ body {
   background: #ffd166;
   cursor: pointer;
   display: none;
-  transition: transform .1s;
+  /* плавная смена цвета вместо резкой */
+#field, #target {
+  transition: background .3s, transform .1s;
 }
-#target:active { transform: scale(.85); }
+active { transform: scale(.85); }
 
 button {
   padding: 10px 24px;
