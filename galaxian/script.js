@@ -96,12 +96,10 @@ function update() {
   if (keys["ArrowRight"] || keys["d"] || keys["в"]) player.x += 4.5;
   player.x = Math.max(22, Math.min(W - 22, player.x));
 
-  if (keys[" "]) {
-    if (player.cooldown <= 0 && pBullets.length < 2) { // как в оригинале: максимум 2 пули
+  if (player.cooldown <= 0 && pBullets.length < 2) { // как в оригинале: максимум 2 пули
       pBullets.push({ x: player.x, y: player.y - 16 });
       player.cooldown = 16;
       beep(880, 0.06);
-    }
   }
   player.cooldown--;
 
