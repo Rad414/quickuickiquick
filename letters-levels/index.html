@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Буквы и слоги</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">🎯 Поймай букву</h1>
+
+  <p id="info">Счёт: <b id="score">0</b> из 10 · Время: <b id="time">30</b> с</p>
+
+  <div id="field"><div id="target">А</div></div>
+
+  <div id="quiz" style="display:none;">
+    <p class="task">Найди: <b id="goal"></b></p>
+    <div id="choices">
+      <button class="choice" id="left"></button>
+      <button class="choice" id="right"></button>
+    </div>
+  </div>
+
+  <p id="msg"></p>
+  <button id="start">Начать игру</button>
+  <script src="script.js"></script>
+</body>
+</html>
