@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Найди букву</title>
+  <title>Найди букву или слог</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🔎 Найди букву</h1>
+  <h1>🔎 Найди букву или слог</h1>
 
-  <p class="task">Найди: <b id="goal">А</b></p>
-
-  <div id="choices">
-    <button class="choice" id="left"></button>
-    <button class="choice" id="right"></button>
+  <!-- Экран выбора режима -->
+  <div id="start-screen">
+    <p>Выбери режим:</p>
+    <button id="btn-letters">Буквы</button>
+    <button id="btn-syllables">Слоги</button>
   </div>
 
-  <p id="msg"></p>
-  <button id="stop">Остановить</button>
+  <!-- Игровая зона (скрыта по умолчанию) -->
+  <div id="game-area" style="display:none;">
+    <p class="task">Найди: <b id="goal">А</b></p>
+
+    <div id="choices">
+      <button class="choice" id="left"></button>
+      <button class="choice" id="right"></button>
+    </div>
+
+    <p id="msg"></p>
+    <button id="stop">Остановить</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
