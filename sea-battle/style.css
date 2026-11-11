@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(180deg, #d4f1f9 0%, #a8d8ea 100%);
+  color: #2d4a6d;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 { color: #ff6b6b; text-shadow: 0 2px 4px rgba(0,0,0,.1); }
+
+#boards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.board-wrap h2 { margin: 8px 0; font-size: 18px; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.cell {
+  border-radius: 6px;
+  background: #bde0fe;
+  cursor: pointer;
+  transition: transform .1s, background .2s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell:hover { transform: scale(1.1); }
+
+/* твой флот: корабли видно */
+.cell.ship { background: #6c757d; }
+
+/* выстрел мимо */
+.cell.miss { background: #e9ecef; }
+
+/* попадание */
+.cell.hit { background: #ef476f; }
+
+/* потопленный корабль */
+.cell.sunk { background: #7b2d43; }
+
+/* против потопленного нельзя кликать */
+.cell.done { cursor: default; }
+
+#msg { font-size: 18px; min-height: 24px; font-weight: 600; }
+
+button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+  background: #4a6fa5;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .1s;
+}
+button:active { transform: scale(.95); }
