@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Quizzes App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поймай точку</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Добро пожаловать в Quizzes App!</h1>
-    <p>Создайте свою викторину или пройдите готовую.</p>
-    <a href="creator.html" class="btn">Создать викторину</a>
-    <a href="quiz.html" class="btn">Пройти викторину</a>
-  </div>
+  <h1>🎯 Поймай точку</h1>
+  <p>Счёт: <b id="score">0</b> · Время: <b id="time">30</b> с</p>
+  <div id="field"><div id="target"></div></div>
+  <button id="start">Начать игру</button>
+  <script src="script.js"></script>
 </body>
 </html>
