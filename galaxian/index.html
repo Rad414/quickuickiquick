@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галактика</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Галактика</h1>
+
+  <div id="hud">
+    <span>Очки: <b id="score">0</b></span>
+    <span>Волна: <b id="wave">1</b></span>
+    <span>Жизни: <b id="lives">❤️❤️❤️</b></span>
+  </div>
+
+  <canvas id="game" width="480" height="640"></canvas>
+
+  <div id="touch">
+    <button id="t-left">◀</button>
+    <button id="t-fire">🔥</button>
+    <button id="t-right">▶</button>
+  </div>
+
+  <p id="msg"></p>
+  <button id="play">Играть</button>
+  <script src="script.js"></script>
+</body>
+</html>
