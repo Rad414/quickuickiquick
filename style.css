@@ -18,17 +18,22 @@ body {
 
 #target {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;          /* уже не круг, а плашка */
   background: #ffd166;
+  color: #1e2233;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   display: none;
-  /* плавная смена цвета вместо резкой */
-#field, #target {
   transition: background .3s, transform .1s;
+  user-select: none;
 }
-active { transform: scale(.85); }
+#target:active { transform: scale(.85); }
 
 button {
   padding: 10px 24px;
