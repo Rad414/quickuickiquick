@@ -15,9 +15,9 @@ body {
 }
 
 .choice {
-  width: 90px;
+  width: 110px;          /* чуть шире, чтобы слоги влезали */
   height: 90px;
-  font-size: 44px;
+  font-size: 32px;       /* шрифт поменьше для слогов */
   font-weight: bold;
   border: none;
   border-radius: 12px;
@@ -36,12 +36,19 @@ body {
   75% { transform: translateX(6px); }
 }
 
-#stop {
+button {
   padding: 10px 24px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+}
+#btn-letters, #btn-syllables {
+  background: #4a6fa5;
+  color: #fff;
+  margin: 0 8px 16px 0;
+}
+#stop {
   background: #ef476f;
   color: #fff;
-  cursor: pointer;
 }
