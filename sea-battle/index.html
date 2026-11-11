@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Морской бой</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚢 Морской бой</h1>
+  <p id="status">Твой ход! Кликни по клетке поля противника</p>
+
+  <div id="boards">
+    <div class="board-wrap">
+      <h2>Флот противника</h2>
+      <div class="board" id="enemy"></div>
+    </div>
+    <div class="board-wrap">
+      <h2>Твой флот</h2>
+      <div class="board" id="player"></div>
+    </div>
+  </div>
+
+  <p id="msg"></p>
+  <button id="new">Новая игра</button>
+  <script src="script.js"></script>
+</body>
+</html>
