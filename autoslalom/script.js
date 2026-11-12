@@ -37,7 +37,7 @@ function beep(freq, dur = 0.08, type = "square", vol = 0.12) {
 // только встречные машины, на случайной полосе
 function spawnCar() {
   const x = L + 16 + Math.floor(Math.random() * 4) * 66;
-  obstacles.push({ x, y: -90, w: 44, h: 76, vy: speed * 0.1 });
+  obstacles.push({ x, y: -90, w: 44, h: 76, vy: speed * 0.01 });
 }
 
 function reset() {
