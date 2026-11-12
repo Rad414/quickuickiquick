@@ -46,7 +46,7 @@ function reset() {
   dist = 0;
   car = { x: W / 2 - CAR_W / 2 };
   obstacles = [];
-  laneTimer = 35;             // первая машина не сразу
+  laneTimer = 110;             // первая машина не сразу
   msgEl.textContent = "";
   playBtn.style.display = "none";
   state = "playing";
