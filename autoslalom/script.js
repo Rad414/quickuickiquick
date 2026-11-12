@@ -37,7 +37,7 @@ function beep(freq, dur = 0.08, type = "square", vol = 0.12) {
 // только встречные машины, на случайной полосе
 function spawnCar() {
   const x = L + 16 + Math.floor(Math.random() * 4) * 66;
-  obstacles.push({ x, y: -90, w: 44, h: 76, vy: speed * 0.01 });
+  obstacles.push({ x, y: -90, w: 44, h: 76, vy: speed * 0.1 });
 }
 
 function reset() {
@@ -46,7 +46,7 @@ function reset() {
   dist = 0;
   car = { x: W / 2 - CAR_W / 2 };
   obstacles = [];
-  laneTimer = 70;             // первая машина не сразу
+  laneTimer = 35;             // первая машина не сразу
   msgEl.textContent = "";
   playBtn.style.display = "none";
   state = "playing";
