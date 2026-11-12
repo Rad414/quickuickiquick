@@ -42,7 +42,7 @@ function spawnCar() {
 
 function reset() {
   score = 0;
-  speed = 80;                 // старт медленнее
+  speed = 20;                 // старт медленнее
   dist = 0;
   car = { x: W / 2 - CAR_W / 2 };
   obstacles = [];
@@ -68,7 +68,7 @@ function crash() {
 
 function update() {
   dist++;
-  speed = 80 + Math.floor(dist / 200) * 5;   // растёт очень плавно
+  speed = 20 + Math.floor(dist / 200) * 5;   // растёт очень плавно
   score = Math.floor(dist / 10);
 
   if (keys["ArrowLeft"] || keys["a"] || keys["ф"]) car.x -= 4;
