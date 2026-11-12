@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(180deg, #1a2238 0%, #101626 100%);
+  color: #fff;
+  margin: 0;
+  padding: 16px;
+}
+
+h1 { color: #ffd166; text-shadow: 0 0 12px rgba(255, 209, 102, .4); }
+
+#hud {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+canvas {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(74, 144, 217, .3);
+  touch-action: none;
+}
+
+#touch {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 14px 0;
+}
+
+#touch button {
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  border: none;
+  border-radius: 24px;
+  background: #4a6fa5;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  touch-action: none;
+}
+#touch button:active { transform: scale(.9); }
+
+button#play {
+  padding: 12px 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+  background: #06d6a0;
+  color: #06281f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#msg { font-size: 18px; min-height: 24px; }
